@@ -101,11 +101,11 @@
             const computerChoice = choices[Math.floor(Math.random()*choices.length)];
 
             let result = "";
-            if (playerChoice === computerCChoice) {
+            if (playerChoice === computerChoice) {
                 result="Hòa";
             } else if (
-                (playerChoice === "keo" && computerChoice ==="bao") ,
-                (playerChoice === "bua"&& computerChoice ==="keo") ,
+                (playerChoice === "keo" && computerChoice ==="bao") ||
+                (playerChoice === "bua"&& computerChoice ==="keo") ||
                 (playerChoice === "bao" && computerChoice === "bua")
             ) {
                 result = "Bạn tthắng"
@@ -114,7 +114,7 @@
                 result = "Bạn thua"
             }
         }
-        document.getElementById("result").innerText = `Bạn chọn: ${playerchoice.topUpperCase()}-Máy chọn: ${computerChoice.toUpperCase()};
+        document.getElementById("result").innerText = `Bạn chọn: ${playerChoice.toUpperCase()}-Máy chọn: ${computerChoice.toUpperCase()} \n Kết quả: ${resultresult};
     </script>
 
 </body>
