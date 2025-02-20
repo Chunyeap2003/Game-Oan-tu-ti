@@ -104,17 +104,18 @@
             if (playerChoice === computerChoice) {
                 result="Hòa";
             } else if (
-                (playerChoice.toLowerCase === "keo" && computerChoice ==="bao") ||
-                (playerChoice.toLowerCase === "bua"&& computerChoice ==="keo") ||
-                (playerChoice.toLowerCase === "bao" && computerChoice === "bua")
+                (playerChoice.toLowerCase() === "keo" && computerChoice ==="bao") ||
+                (playerChoice.toLowerCase() === "bua"&& computerChoice ==="keo") ||
+                (playerChoice.toLowerCase() === "bao" && computerChoice === "bua")
             ) {
-                result = "Bạn tthắng"
+                result = "Bạn thắng"
             }
             else {
                 result = "Bạn thua"
             }
         }
-        document.getElementById("result").innerText = `Bạn chọn: ${playerChoice.toUpperCase()} - Máy chọn: ${computerChoice.toUpperCase()} \n Kết quả: ${result}`;
+        document.getElementById("result").innerText = 
+        `Bạn chọn: ${playerChoice.toUpperCase()} - Máy chọn: ${computerChoice.toUpperCase()} \n Kết quả: ${result}`;
     </script>
 
 </body>
